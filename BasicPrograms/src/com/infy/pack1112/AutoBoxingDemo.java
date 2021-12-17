@@ -29,6 +29,23 @@ public class AutoBoxingDemo {
 		int i9 = (int)l5;
 		
 		
+		
+		String s1 = "10.5f";
+		
+		float f = Float.parseFloat(s1);
+		
+		
+		String s2 = "10";
+		int xyz = Integer.parseInt(s2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
