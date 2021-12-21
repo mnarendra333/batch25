@@ -1,0 +1,68 @@
+Queue:
+=======
+
+if we are planing to process the elements based on the priority 
+
+FIFO
+LILO
+
+
+//priority Queues
+//blocking queues
+
+
+
+
+Iterators In Java :
+===================
+Enumaration
+Iterator
+ListIterator
+
+
+
+
+
+		//for  //foreach 
+		//loop all collections in java - 
+		//forward direction
+		/*Iterator<Integer> itr = al.iterator();
+		while (itr.hasNext()) {
+			
+			if(itr.next() == 30)
+				itr.remove();
+			
+		}
+		
+		System.out.println(al);*/
+		
+		HashMap<Integer, String> map = new HashMap<Integer, String>();
+		map.put(10, "hello");
+		map.put(20, "hi");
+		
+		Set<Entry<Integer,String>> entry = map.entrySet();
+		
+		/*for (Entry<Integer, String> entry2 : entry) {
+			if(entry2.getKey() == 20) {
+				map.remove(entry2.getKey());
+			}
+		}*/
+		Iterator<Entry<Integer,String>> itr = entry.iterator();
+		while (itr.hasNext()) {
+			Entry<Integer,String> entryObj = itr.next();
+			
+			if(entryObj.getKey()==20) {
+				itr.remove();
+			}
+				
+		}
+		
+		System.out.println(map);
+		
+		
+		//System.out.println(al);
+		
+		
+		
+		
+
