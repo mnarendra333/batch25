@@ -1,0 +1,20 @@
+Map Interface
+==============
+
+java.util package
+
+HashMap
+LinkedHashMap
+TreeMap
+
+
+Map takes data in the form of key,value pair
+
+map holds entries
+key is unique in map
+value can be duplicated
+
+
+
+
+use treemap for sorting

@@ -1,0 +1,57 @@
+Queue Imlementations :
+
+
+Map Implementations : 
+
+HashMap 
+LinkedHashMap 
+TreeMap 
+IdentityHashMap
+Hashtable 1.0 - 
+
+
+
+
+Collection
+ List
+ Set
+ 	SortedSet extends Set 
+ 	NavigableSet extends SortedSet - class TreeSet
+ Queue
+ 
+Map 
+	SortedMap extends Map 
+	NavigableMap extends SortedMap 
+	
+	class => TreeMap 
+	
+===========================
+Collections class
+Arrays
+ConcurrentHashMap 
+=============================
+
+ExceptionHandelling
+
+Files 
+text, jpg ,zip
+
+
+jdbc- DB
+servlets,jsp - UI 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+	
+
+
