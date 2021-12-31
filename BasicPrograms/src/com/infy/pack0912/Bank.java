@@ -36,6 +36,18 @@ class HDFC implements Bank{
 		
 	}
 	
+	public void testmethod() {
+		System.out.println("i am from HDFC moneyTransfer");
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+	
 }
 
 class SBI implements Bank{

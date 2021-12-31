@@ -1,0 +1,78 @@
+Collections
+Arrays 
+
+
+
+Collections Class 
+
+->sort the integer eleme of arraylist using =>>>>>Collections.sort(al);- 1
+->sort the integer eleme of arraylist into desc/asc =>>>>>Collections.sort(al,new IntComparator()); - 2
+
+Collections Class - with userdefined objects
+
+(make sure employee class should implement Comparable interface and override compareTo method)
+->sort the employee eleme of arraylist using =>>>>>Collections.sort(al); - 2
+->sort the employee eleme of arraylist into desc/asc =>>>>>Collections.sort(al,new EmployeeComprator()); - 3
+
+
+
+
+Collections.sort(al,new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee o1, Employee o2) {
+				// TODO Auto-generated method stub
+				Integer i1 = o1.getEmpId();
+				Integer i2 = o2.getEmpId();
+				
+				return -i1.compareTo(i2);
+			}
+			
+		});
+		
+		
+		
+		
+		
+Collection(I)
+
+	List - AL,LL,Vector,Stack
+	Set - HashSet,LinkedHashSet, TreeSet
+		SS
+		NS
+	Queue - PQ
+	
+Map - HashMap, LinkedHashMap
+	SortedMap
+	NavigableMap - TreeMap 
+	
+
+Cursors - Iterators
+====================
+Enumration
+Iterator
+ListIterator
+
+UtilityClasses :
+================
+Collections
+Arrays
+
+
+Sorting techniques :
+=====================
+comparable - compareTo(obj2)
+comparator - compare(obj1,obj2)
+
+
+=>Movies Example 
+
+
+
+
+
+
+
+
+
+

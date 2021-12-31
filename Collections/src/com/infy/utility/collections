@@ -1,0 +1,51 @@
+Collection(I)
+
+List
+	ArrayList
+	LinkedList
+	Vector
+	Stack
+
+Set
+	HashSet
+	LinkedHashSet - 
+	TreeSet
+Queue
+	PriorityQueue 
+	(FIFO or prior to process), sending an email , MQ's are internally queue concept 
+
+=============================================================
+Map 
+	HashMap 
+	LinkedHashMap
+	IdentityHashMap
+	WekeadHashMap
+	Hashtable - 
+	Properties - how to read the values from properties file 
+	
+Utiltity classes
+=================
+Collections - non synchronized collection into sysnchronized collection 
+Arrays - converting an array into collection, sorting using predefined method support
+
+Iterators :
+============
+Enumaration
+Iterator - global iterator 
+ListIterator
+
+
+
+ 
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
