@@ -1,0 +1,13 @@
+how to create file
+read the file
+write the content into the file
+read the jpg/jpeg imsges 
+copy an image from source to dest location 
+how to create zip files 
+
+Steams 
+
+
+
+
+

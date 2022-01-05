@@ -1,0 +1,148 @@
+Diff types of exceptions :
+==========================
+
+
+ArrayIndexOutOfBoundsException
+NullPointerException
+
+
+
+
+//correct all the syntaxes to compile the program 
+		//copiletime errors comes because there is a problem in the sysntax
+		//runtime erors are nothing but exceptions 
+		//runtime error will occur at runtime
+		//runtime errors are caused by invalid input
+		
+		
+		
+exception handelling keywords:
+===============================
+try      -   to maintain the risky code 
+catch    -   to handle the exception (handle the exception or convert system error messages into user friendly error messages and returnt o the UI)
+finally  -   this is default block, which maintains the logic for cleanup the connection objects/ cleanup the streams 
+throws   -   delegate the exceptipon handelling responsibility to the caller 
+throw    -   this is used to manually throw the exception  
+==========================================================
+
+
+methods to print exception information
+======================================
+printStackTrace(); => this method gives complete information about exception
+
+//name of the exception
+//description
+//stacktrace
+
+
+toString();
+//name of the exception
+//description
+
+getMessage();
+//description
+
+
+try with single catch 
+
+try with multiple catch 
+
+try with single catch with specific exception 
+
+
+
+
+
+
+method1->m2-
+>m3->m4
+
+
+m4
+=====================================
+
+
+Throwable 
+=========
+Error => heap issues-outofmemeoryerror,stackoverflowerror,
+Exception=> checked , unchecked exceptions
+
+
+checked exceptions:
+===================
+(superClass)IOException extends Exception
+FileNotFoundException
+ClassNotFoundException 
+
+unchecked Exceptions:
+=====================
+(Parent)RuntimeException extends Exception
+NullPointerException
+ArrayIndexOFBE
+ClassCastException
+AE
+
+
+
+How to create user defined exception 
+====================================
+->your class should be extending Exception or RuntimeException 
+->we need to have a single parameterized constructor 
+
+
+
+
+
+
+age<18 invalid age exception 
+
+
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at NPEDemo.main(NPEDemo.java:8)
+
+
+
+com.pragim.ude.InvliadAgeException: age is not valid , should be greater than or equal to 18
+	at com.pragim.ude.AgeDemo.vaidateAge(AgeDemo.java:11)
+	at com.pragim.ude.AgeDemo.main(AgeDemo.java:26)
+	
+
+
+username and pwd is equals pint success
+else throw the exception with InVliadLoginException 
+
+
+InVliadLoginException 
+Login.java 
+
+validateLogin(uname,pwd)
+
+  throw InVliadLoginException("login denied");
+ 
+  
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
