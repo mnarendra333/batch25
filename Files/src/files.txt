@@ -5,7 +5,33 @@ read the jpg/jpeg imsges
 copy an image from source to dest location 
 how to create zip files 
 
+
+Readers and writers:
+====================
+FileReader - read the characters from a file 
+FileWriter - write the content into the file - string/int/char array 
+
+BufferedReader - read the line by line from the file 
+BufferedWriter - write the content into the file - string/int/char array  ..newLine()
+
+
 Steams 
+======
+FileInputStream
+FileOutputStream 
+
+BufferedInputStream
+BufferedOutputStream
+
+images:
+=======
+0 and 1 's 
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,46 @@
+
+
+//sorting
+
+
+comparable - java.lang
+===========
+compareTo()
+
+
+comprator java.util
+====================
+compare(obj1,obj2)
+equals
+
+
+
+Set Implementations:
+
+HashSet
+LinkedHashSet
+TreeSet
+ by  default comparable
+
+
+1> comparable
+2> comparator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
