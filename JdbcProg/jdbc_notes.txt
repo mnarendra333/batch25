@@ -1,0 +1,52 @@
+Connect to a databasr from java program :
+==========================================
+1>load the driver
+2>create the connection object (url,username,password)
+3>send the sql query to database 
+4>execute 
+
+
+in jdbc we have 4 types of drivers:
+====================================
+1>type-1
+2>type-2
+3>type-3
+4>type-4 thin driver 
+
+
+steps to connect to dabase :
+=============================
+ ->load the driver - type4
+ -> after loading the driver a bridge will be established bw javaprograma nd databse
+ -> next step is to create the connection object with the databse 
+ -> we need to know 
+ 			where the database is installed (127.0.0.1)
+ 			port number of the database (1521) 
+ 			schema name of the database (XE)
+ 			username and pwd of the database (system,system) 
+ 			
+ => add the ojdbc14 to project buildpath	
+
+//C:\oraclexe\app\oracle\product\10.2.0\server\jdbc\lib\ojdbc14.jar
+
+
+stmt's in jdbc:
+==================
+to carry sql to databse
+
+Statement 
+PreparedStatement
+CallableStatement
+
+
+methods to execute sql query:
+==============================
+executeUpdate -> execting non-select operations
+executeQuery -> select operations 
+execute -> ddl and excuting procedures
+
+
+
+
+
+
