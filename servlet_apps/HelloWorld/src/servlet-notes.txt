@@ -1,0 +1,63 @@
+clientside technologies
+=======================
+html
+javascript
+css
+
+
+serverside technologies
+========================
+servlet
+jsp
+
+end to end application
+====================================================
+clientside technologies(html,js,css,bootstrap,angular)
+serverside technologies(servlet,jsp,spring)
+browser - chrome , firefox 
+application servers - tomcat,weblogic,jboss
+database servers - oracle,mysql 
+
+=====================================
+
+registation
+login
+logout/signout
+redirection 
+chaining
+filters
+listerns 
+real project 
+
+
+
+
+
+servlet
+=======
+is a program which stays inside the server 
+
+
+request
+response 
+
+> how to create a servlet (.java)
+
+  1> implement predefined interface given by java team javax.servlet.Servlet 
+		class <class-name> implements Servlet
+		{
+		
+				
+		
+		}	
+	2> class <class-name> extends GenericServlet{
+	
+	}
+	
+	
+	3> class <class-name> extends HttpServlet {
+	
+	}
+ 
+
+
