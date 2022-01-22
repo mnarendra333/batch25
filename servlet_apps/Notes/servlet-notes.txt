@@ -1,0 +1,8 @@
+
+
+3 ways to create servlet
+
+
+1> implemnring Servlet interface
+2> extend GenericServlet
+3> extend HttpServlet 

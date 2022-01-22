@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>personal info</title>
+
+<style type="text/css">
+table {
+	width: 50%;
+	margin: 0px auto;
+}
+
+tr {
+	line-height: 40px;
+}
+
+
+
+.tableRow{
+	width: 200px;
+	height: 30px;
+	border-radius: 10px;
+
+}
+
+.bodyCSS{
+
+	background-color: #B0C4DE;
+}
+h2style{
+position: center;
+}
+</style>
+
+	
+
+</head>
+<body class="bodyCSS">
+
+
+	<h2 style="position: center">Personal Information</h2>
+	<form action="persrv">
+
+		<table>
+
+			<tr>
+				<td>FirstName</td>
+				<td><input type="text" name="fname" class="tableRow"/></td>
+			</tr>
+			<tr>
+				<td>LastName</td>
+				<td><input type="text" name="lname" class="tableRow"/></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="usr_email" required="required" class="tableRow"/></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="pwd" class="tableRow"/></td>
+			</tr>
+			<tr>
+				<td>DOB</td>
+				<td><input type="date" name="dob" class="tableRow"/></td>
+			</tr>
+
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" value="m">Male</td>
+				<td><input type="radio" name="gender" value="f">FeMale</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><textarea name="address" class="tableRow"></textarea></td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><select name="city" class="tableRow">
+						<option>chenni</option>
+						<option>mumbai</option>
+						<option>hyd</option>
+						<option>vizag</option>
+						<option>pune</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td>Hobbies</td>
+				<td><input type="checkbox" value="cricket" name="hobbies" />cricket<br>
+					<input type="checkbox" value="chess" name="hobbies" />chess<br>
+					<input type="checkbox" value="rugby" name="hobbies" />rugby<br>
+					<input type="checkbox" value="football" name="hobbies" />football<br>
+					<input type="checkbox" value="reading books" name="hobbies" />reading
+					books<br>
+			</tr>
+
+			
+
+			<tr>
+
+				<td><input type="submit" name="resume" value="submit" class="tableRow"/></td>
+				<td><input type="reset" name="resume" value="Reset" class="tableRow"/></td>
+			</tr>
+
+
+		</table>
+
+
+
+	</form>
+
+</body>
+</html>

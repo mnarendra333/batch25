@@ -1,0 +1,12 @@
+
+
+
+css
+
+=====
+
+inline  - with in the tag
+internal - with in the file 
+external - outside the file 
+
+
