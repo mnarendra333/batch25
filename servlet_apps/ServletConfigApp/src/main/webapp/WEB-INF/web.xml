@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee">
+  <display-name>ServletConfigApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  		 <param-name>log4jlevel</param-name>
+      	 <param-value>debug</param-value>
+  	
+  </context-param>
+  <servlet>
+    <description></description>
+    <display-name>FirstServlet</display-name>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>com.pragim.servletconfigapp.FirstServlet</servlet-class>
+    <init-param>
+      <description></description>
+      <param-name>log4jlevel</param-name>
+      <param-value>debug</param-value>
+    </init-param>
+    <init-param>
+      <description></description>
+      <param-name>empid</param-name>
+      <param-value>101</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/firstsrv</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SecondServlet</display-name>
+    <servlet-name>SecondServlet</servlet-name>
+    <servlet-class>com.pragim.servletconfigapp.SecondServlet</servlet-class>
+    
+    
+    <init-param>
+      <description></description>
+      <param-name>driverName</param-name>
+      <param-value>test</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecondServlet</servlet-name>
+    <url-pattern>/secsrv</url-pattern>
+  </servlet-mapping>
+</web-app>
