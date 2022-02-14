@@ -1,0 +1,17 @@
+create table employee(id number(10),
+	name varchar2(100),
+	dept varchar2(50),
+	sal number(10),
+	designation varchar2(30),
+	hiredate varchar2(30)
+	
+	);
+
+
+
+INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('1', 'omkar', 'it', '150000', 'engineer', '11-jan-90');
+INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('2', 'ramya', 'hr', '160000', 'hr', '12-jan-95');
+INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('3', 'kadambari', 'it', '170000', 'engineer', '12-jan-96');
+INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('4', 'shivani', 'it', '180000', 'consultant', '15-feb-20');
+INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('5', 'sandhya', 'it', '190000', 'sernior consultant', '20-mar-20');
+commit;
