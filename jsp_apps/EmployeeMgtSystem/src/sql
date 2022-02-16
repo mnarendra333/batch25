@@ -15,3 +15,9 @@ INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VAL
 INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('4', 'shivani', 'it', '180000', 'consultant', '15-feb-20');
 INSERT INTO "SYSTEM"."EMPLOYEE" (ID, NAME, DEPT, SAL, DESIGNATION, HIREDATE) VALUES ('5', 'sandhya', 'it', '190000', 'sernior consultant', '20-mar-20');
 commit;
+
+
+
+SQL> create sequence employee_seq start with 1 increment by 1;
+
+Sequence created.

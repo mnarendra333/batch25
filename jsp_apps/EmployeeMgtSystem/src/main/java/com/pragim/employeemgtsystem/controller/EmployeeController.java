@@ -37,11 +37,51 @@ public class EmployeeController extends HttpServlet {
 			EmployeeDAO dao = new EmployeeDAO();
 			
 			String id = request.getParameter("empid");
-			String operation = request.getParameter("opName");
-			if(id!=null && "delete".equalsIgnoreCase(operation)) {
+			String btnName = request.getParameter("buttonName");
+			if(id!=null && "delete".equalsIgnoreCase(btnName)) {
 				int eno = Integer.parseInt(id);
 				String message = dao.deleteEmployee(eno);
 				request.setAttribute("displayMsg", message);
+			}
+			if("add".equalsIgnoreCase(btnName)) {
+				String name = request.getParameter("empname");
+				String department = request.getParameter("dept");
+				String salary = request.getParameter("sal");
+				String designation = request.getParameter("designation");
+				String hirdate = request.getParameter("hirdate");
+				
+				int sal = 0;
+				if(salary!=null) {
+					sal = Integer.parseInt(salary);
+				}
+				
+				String message = dao.addEmployee(name,department,sal,designation,hirdate);
+				request.setAttribute("displayMsg", message);
+			}
+			if(id!=null && "edit".equalsIgnoreCase(btnName)) {
+				int eno = Integer.parseInt(id);
+				Employee empObj = dao.loadEmployee(eno);
+				request.setAttribute("employeeObj", empObj);
+				RequestDispatcher dispatcher = request.getRequestDispatcher("employeeEdit.jsp");
+				dispatcher.forward(request, response);
+			}
+			
+			if("update".equalsIgnoreCase(btnName)) {
+				int eno = Integer.parseInt(id);
+				String name = request.getParameter("empname");
+				String department = request.getParameter("dept");
+				String salary = request.getParameter("sal");
+				String designation = request.getParameter("designation");
+				String hirdate = request.getParameter("hirdate");
+				
+				int sal = 0;
+				if(salary!=null) {
+					sal = Integer.parseInt(salary);
+				}
+			
+				String message = dao.updateEmployee(eno,name,department,sal,designation,hirdate);
+				request.setAttribute("displayMsg", message);
+				
 			}
 			
 			

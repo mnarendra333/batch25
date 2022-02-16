@@ -112,6 +112,9 @@ if(msg!=null){
 		<%} %>
 		<% 
 List<Employee> list = (ArrayList<Employee>)request.getAttribute("empList");
+
+if(list!=null && list.size()>0)
+{
 for(Employee emp : list)
 {
 %>
@@ -123,10 +126,13 @@ for(Employee emp : list)
 			<td><%=emp.getSal() %></td>
 			<td><%=emp.getDesignation() %></td>
 			<td><%=emp.getHiredate() %></td>
-			<td><a href="getAllEmp?empid=<%=emp.getId()%>&opName=delete"
+			<td><a href="getAllEmp?empid=<%=emp.getId()%>&buttonName=edit"
+				onclick="myFunction()" class="glyphicon glyphicon-edit"></a></td>
+			<td><a href="getAllEmp?empid=<%=emp.getId()%>&buttonName=delete"
 				onclick="myFunction()" class="glyphicon glyphicon-trash"></a></td>
 		</tr>
-		<%} %>
+		<%}} %>
 	</table>
+	<a href="addEmployee.jsp" class="btn btn-primary">AddEmployee</a>
 </body>
 </html>
