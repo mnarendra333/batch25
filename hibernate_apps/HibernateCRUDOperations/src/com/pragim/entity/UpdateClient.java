@@ -15,10 +15,15 @@ public class UpdateClient {
 		
 		Actor actor = session.get(Actor.class, 101);
 		actor.setAddress("bangl");
-		Transaction tx = session.beginTransaction();
+		Transaction tx = session.beginTransaction();	
 		session.update(actor);
 		tx.commit();
 		
+		
+		//select - load() or get 
+		//insert - save(obj) 
+		//update - update(obj)
+		//delete - delete(obj)
 		
 		
 		

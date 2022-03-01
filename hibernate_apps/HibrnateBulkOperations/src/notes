@@ -1,0 +1,9 @@
+bulk operations :
+=================
+
+hql 
+criteria 
+nativeSQL 
+
+hql = hibernate query language 
+
