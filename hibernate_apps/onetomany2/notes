@@ -1,0 +1,18 @@
+
+
+
+1) save single parent along with multiple childs
+2) remove child from existing parent
+3) remove the child record permanantly from DB 
+4) select all parents along with all childs 
+5) add a new child to the existing parent 
+6) update the child information of existing parent
+7) update the parent information 
+
+
+1+n 
+
+
+
+
+
