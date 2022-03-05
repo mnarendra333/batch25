@@ -1,0 +1,21 @@
+
+
+
+create maven project 
+configure hibernate and oracle dependencies inside dependencies section 
+
+
+create entities 
+  1> Reader - reader props and Set object with subscriptions
+  2> Subscription - sbscription props and Set object to hold readers 
+  
+create hibernate config 
+
+create hibernate util to get sessionfactory object - reuse it in all clients
+
+Cleint program 
+
+
+
+-> one tomany 
+-> many to many  
