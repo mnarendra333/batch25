@@ -1,0 +1,33 @@
+
+
+
+Spring modules :
+================
+Spring core - Dependency injection 
+spring jdbc - DL
+spring orm  - DL
+spring mvc  - UI and backend api's
+spring aop  - injecting services to methods
+
+
+spring - end to end application 
+
+UI + backedn code (java) + persistance -> DB
+
+DI
+======
+
+a.java
+
+
+b.java 
+c.java
+
+injecting dependencies into dependent
+======================================
+
+
+
+
+
+
