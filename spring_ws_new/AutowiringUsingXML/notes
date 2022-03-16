@@ -1,0 +1,120 @@
+
+
+dependency injection : 
+========================
+
+the process of injecting the depndencies into dependent 
+
+dependent -> caller 
+dependency -> called 
+
+
+
+how many ways we can inject the dependencies here :
+===================================================
+1) setter injection 
+2) constructor injection 
+
+
+
+
+
+
+dependency injection though setter and inject premetive dependency :
+====================================================================
+
+dependent : PrintClass
+dependency : message 
+
+
+
+spring.xml 
+==========
+we have to configure both dependent and dependency information 
+
+
+client.java
+============
+
+ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
+
+spring container will load all the dependent/dependencies from xml 
+
+ctx -> PrintClass, message = "welcome to spring ioc"
+
+
+PrintClass obj = ctx.getBean(PrintClass.class);
+
+
+sprin identifies is there any property tag configured inside the dependent 
+if yes spring container will call setter method inside the dependent and pass the dependency value 
+
+spring will create the object of dependency and return the object 
+
+
+
+
+
+
+
+dependency injection though constructor
+=========================================
+
+ 
+<!-- dependency -->
+	<bean id="id1" class="com.pragim.SpringDIwithObjectUsingConstructor.School">
+		
+		<constructor-arg index="0" value="101"></constructor-arg>
+		<constructor-arg index="1" value="HydPublicSchool"></constructor-arg>
+		<constructor-arg index="2" value="bangl"></constructor-arg>
+		
+	
+	</bean>
+	
+	
+
+	<!-- dependent -->
+	<bean id="id2" class="com.pragim.SpringDIwithObjectUsingConstructor.Student">
+	
+		<constructor-arg index="0" value="1"></constructor-arg>
+		<constructor-arg index="1" value="ravi"></constructor-arg>
+		<constructor-arg index="2" ref="id1"></constructor-arg>
+		
+	</bean>
+
+
+
+dependency injection using autowiring:
+=======================================
+byName
+byType
+constructor
+
+
+byName : 
+=========
+
+inside the dependent class if any of the property name is equals to any of the bean id name 
+in the xml autowiring happens
+
+byType : 
+=========
+
+inside the dependent class if any of the property type is equals to any of the bean type name 
+in the xml autowiring happens
+
+
+constructor : 
+============
+
+inside the dependent class if any of the property type is equals to any of the bean class name 
+in the xml and dependent should have a constuctor to inject the dependency autowiring happens
+
+
+
+
+
+
+
+
+

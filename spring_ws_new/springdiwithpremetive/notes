@@ -1,0 +1,66 @@
+
+
+dependency injection : 
+========================
+
+the process of injecting the depndencies into dependent 
+
+dependent -> caller 
+dependency -> called 
+
+
+
+how many ways we can inject the dependencies here :
+===================================================
+1) setter injection 
+2) constructor injection 
+
+
+
+
+
+
+dependency injection though setter and inject premetive dependency :
+====================================================================
+
+dependent : PrintClass
+dependency : message 
+
+
+
+spring.xml 
+==========
+we have to configure both dependent and dependency information 
+
+
+client.java
+============
+
+ApplicationContext ctx = new ClassPathXmlApplicationContext("spring.xml");
+
+spring container will load all the dependent/dependencies from xml 
+
+ctx -> PrintClass, message = "welcome to spring ioc"
+
+
+PrintClass obj = ctx.getBean(PrintClass.class);
+
+
+sprin identifies is there any property tag configured inside the dependent 
+if yes spring container will call setter method inside the dependent and pass the dependency value 
+
+spring will create the object of dependency and return the object 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

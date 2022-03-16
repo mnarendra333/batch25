@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- dependency -->
+	
+	<bean id="id1" class="com.pragim.AutowiringUsingXML.DepartmentBean"></bean>
+	
+	<!-- dependent -->
+
+	<bean id="ebean" class="com.pragim.AutowiringUsingXML.EmployeeBean" autowire="constructor">
+		
+	 
+	</bean>
+</beans>
