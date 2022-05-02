@@ -1,0 +1,18 @@
+[
+    {
+      "empId": 101,
+      "empName": "Doe",
+      "sal": 70000
+    },
+    {
+        "empId": 103,
+        "empName": "Doe",
+        "sal": 70000
+      },
+      {
+        "empId": 102,
+        "empName": "Doe",
+        "sal": 70000
+      }
+   
+  ]

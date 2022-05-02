@@ -1,0 +1,26 @@
+<p>list works!</p>
+
+<div class="container">
+    <h1>Angular 13 CRUD Example - Pragim.com</h1>
+  
+    <a href="#" routerLink="/product/add/" class="btn btn-success">Create New Product</a>
+    
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>ProductName</th>
+        <th>Price</th>
+        <th width="220px">Action</th>
+      </tr>
+      <tr *ngFor="let product of  products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.productName }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <a href="#" [routerLink]="['/product/', product.id, 'delete']" class="btn btn-info">delete</a>
+          <a href="#" [routerLink]="['/product/', product.id, 'update']" class="btn btn-primary">Edit</a>
+          <!-- <button type="button" (click)="deletePost(product.id)" class="btn btn-danger">Delete</button> -->
+        </td>
+      </tr>
+    </table>
+ </div>

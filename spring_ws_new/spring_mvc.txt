@@ -1,0 +1,48 @@
+
+
+Spring Core - DI - Autowiring
+Spring JDBC - sql queries
+Spring ORM - spring config - object ,hql queries,  
+Spring MVC - end to end application 
+
+
+
+Spring MVC - MVC 
+
+
+Model (data) - Student,PrgrassCard 
+View (presentation Layer)- success.jsp, index.jsp  
+Controller - 
+	
+	predefined Controlelr/Front Controler : 
+
+	DispatcherServlet : it wil read our xml/annotation config based on that route the requests to specific java program/controller  
+
+	URI 
+
+	https://localhost:9090/StuMgtSystem/employee/list
+	https://localhost:9090/StuMgtSystem/mgt/getSpecificMemDetails
+
+
+
+SpringMVCApp:
+=============
+1> create a maven project using webapp as a archetype - dynamic web project 
+2> get the java and test folders back 
+3> create resource folder to configure xml file
+4> configure spring dependencies in pom.xml 
+       - spring-core (spring-context)
+       - spring-jdbc
+       - spring- mvc (spring-web,spring-webmvc)
+  	   - jstl jar 
+5> files in project 
+		1>web.xml
+		2>spring.xml
+		3>SpringMVCHelloWorld.java
+		4>success.jsp 
+		5>index.jsp
+
+
+index.jsp -> web.xml -> DispatcherServlet -> spring.xml -> controler(SpringMVCHelloWorld) -> success.jsp
+
+
