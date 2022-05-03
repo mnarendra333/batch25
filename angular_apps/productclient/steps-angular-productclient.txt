@@ -1,0 +1,136 @@
+
+Install nodejs 
+check the versions of node and npm 
+
+C:\Users\naren>node --version
+v16.14.2
+
+C:\Users\naren>npm --version
+8.5.0
+
+npm install -g @angular/cli   
+   add router too 
+   
+   
+   
+ng new product-angularap 
+npm install bootstrap --save
+
+
+src/styles.css
+
+@import "~bootstrap/dist/css/bootstrap.css";
+ - 
+
+
+ng generate module product --routing
+
+ng generate component product/list
+ng generate component product/delete
+ng generate component product/add
+ng generate component product/update
+ng generate interface product/product
+ng generate service product/product
+
+add.html
+addComponent.ts
+productService.ts
+
+
+list.html
+listComponent.ts 
+productService.ts
+
+
+java
+ ||
+RestController 
+
+
+
+
+
+
+ng generate module p --routing
+
+ng generate component product/index
+ng generate component product/view
+ng generate component product/create
+ng generate component product/edit
+
+
+const routes: Routes = [
+  { path: 'post', redirectTo: 'post/index', pathMatch: 'full'},
+  { path: 'post/index', component: IndexComponent },
+  { path: 'post/:postId/view', component: ViewComponent },
+  { path: 'post/create', component: CreateComponent },
+  { path: 'post/:postId/edit', component: EditComponent } 
+];
+  
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class PostRoutingModule { }
+
+
+
+
+ng generate interface product/product
+
+
+ng generate service product/product
+
+
+
+
+
+
+ng new productclient
+install bootstrap
+add bootstrap link to src/styles.css 
+create a module 
+create a routing 
+create a componets - add/update/delete/list 
+create a model 
+create a service 
+
+write code in service layer which comminicates with java 
+   - add / getProduct / update / delete / list 
+
+
+list : 
+======
+call a method which is part of service layer which will return all products froom 
+list component.ts 
+
+and get the response feed it to listComponent.html 
+
+add HttpClientModule in app.module.ts under imports 
+
+to get the angular forms support
+add FormsModule,
+    ReactiveFormsModule    these in product.module.ts under imports 
+
+ng serve 
+
+http://localhost:4200/product/list 
+
+product routing   - finds correct route 
+
+ListComponent <- > productService <-> java endpoint 
+
+list component data will be displayed in list component html 
+
+http://localhost:4200/product/101/delete
+
+
+
+
+
+
+
+
+
+
+
